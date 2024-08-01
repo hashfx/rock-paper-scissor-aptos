@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { WalletSelector } from "@aptos-labs/wallet-adapter-ant-design";
-import { useWallet } from "@aptos-labs/wallet-adapter-react";
+import { InputTransactionData, useWallet } from "@aptos-labs/wallet-adapter-react";
 import styled from "styled-components";
 import "@aptos-labs/wallet-adapter-ant-design/dist/index.css";
 
@@ -23,7 +23,7 @@ const WalletWrapper = styled.div`
 `;
 
 const App: React.FC = () => {
-  const { connected } = useWallet();
+  const { account, connected, signAndSubmitTransaction } = useWallet();
 
   return (
     <WindowWrapper>
