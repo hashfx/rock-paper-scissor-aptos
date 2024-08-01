@@ -1,0 +1,17 @@
+[package]
+name = "rock_paper_scissor"
+version = "1.0.0"
+authors = []
+
+[addresses]
+rps = "0x075d66dfdd621381f89036028d1ab997d3fd49dca3bb20b0c8da0be927b31495"
+std = "0x1"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
